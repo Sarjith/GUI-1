@@ -1,0 +1,22 @@
+/*
+a. NAME: SARJITH RAO GONA
+b. EMAIL:SARJITHRAO_GONA@STUDENT.UML.EDU */
+h1
+{
+    text-align:center;
+}
+body
+{
+background-color:lightpink;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td 
+{
+    padding: 5px;
+    text-align: left;
+}
