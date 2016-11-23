@@ -1,9 +1,9 @@
 /*                                                                                                                                                         
  Name: Sarjith Rao Gona                                                                                                                                       
  Contact: sarjithrao_gona@student.uml.edu                                                                                                                     
- Major: Computer Science                                                                             GUI programming 1 assignment-7
+ Major: Computer Science                                                                             GUI programming 1 assignment-8
  
- Date Created: November 15th 2016                                
+ Date Created: November 22th 2016                                
  */
 var tabIndex = 1;
 
