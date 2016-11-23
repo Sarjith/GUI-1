@@ -2,8 +2,9 @@
         Name: Sarjith Rao Gona                                                                                                                                      
         Contact: Sarjithrao_Gona@student.uml.edu                                                                                                                    
         Major: Computer Science   
-        GUI programming 1 assignment-6
-        School: University of Massachusetts Lowell                                                                                                                
+        GUI programming 1, assignment-7
+        School: University of Massachusetts Lowell  
+         Date Created: November 15th 2016
 */
 
 body.main {
@@ -67,6 +68,7 @@ span.bold-this {
 }
 
 #slider {
+    color: black;
     margin: 10px;
 }
 .ui-slider-horizontal{ 
@@ -93,4 +95,105 @@ td {
   
 }
 
+#rowSt {
+    color:black;
+}
 
+#rowEn {
+    color:black;
+}
+
+#colSt {
+    color:black;
+}
+
+#colEn {
+    color:black;
+}
+
+#submit{
+    color: black;
+}
+
+#selected_tabs{
+    color: black;
+}
+
+#remove_tabs{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  w3schools is so helpful:
+  http://www.w3schools.com/css/css_table.asp
+
+  This was really helpful for centering the table. I had to use margin left / right
+  at auto, and width 100%. I'm not sure why but I had to use both the div and the
+  table. If I remove either then the table stops being centered. It also only stays
+  centered for up to 25 columns, after that it expands to the right. But I think that's
+  fine, otherwise the content would become very tiny.
+  https://stackoverflow.com/questions/301147/css-way-to-horizontally-align-table
+  https://stackoverflow.com/questions/9402856/how-to-put-table-in-the-center-of-the-page-using-css
+*/
+div#multiplication_table {
+  /* Currently not used */
+}
+
+table {
+  /* Currently not used */
+}
+
+tbody {
+  /* Currently not used */
+}
+
+/*    Style all rows and all columns this way using parent selectors      */
+tbody > tr > td {
+  background-color: #004c00;               /* Green */
+  border: 3px solid black;
+  color: white;
+  height: 25px;
+  font-family: "Advent Pro";
+  font-size: 100%;
+  font-weight: 900;
+  text-align: center;
+  width: 25px;
+}
+
+/* Style the very top row. */
+tbody > tr:first-child > td {
+  background-color: red;
+  color: white;
+}
+
+/* Style the left most column. */
+tbody > tr > td:first-child {
+  background-color: red;
+  color: white;
+}
+
+/* The very top left table spot should be blank.
+I was pretty confused how to do this, but after some Googling I found this post:
+https://stackoverflow.com/questions/7232813/css-selection-of-first-column-of-first-row-of-a-table-excluding-nested-tables
+
+For making it completely transparent W3Schools was helpful:
+http://www.w3schools.com/css/css_image_transparency.asp */
+tbody > tr:first-child > td:first-child {
+  background-color: #ffffff;    /* This is a white color, we don't care about it. */
+  border-top: none;             /* stop the border from appearing, so the spot in the table looks blank. */
+  border-left: none;
+  color: black;
+  opacity: 0;
+}
