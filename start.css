@@ -1,0 +1,276 @@
+/*                                                                                                                                                     
+        Name: Sarjith Rao Gona                                                                                                                                       
+        Contact: SarjithRao_Gona@student.uml.edu                                                                                                                    
+        Major: Computer Science                                                                                                                                   
+        School: University of Massachusetts Lowell                                                                                                                
+        91.461 GUI Assignment 9:                                                                                             
+                                                                        
+*/
+
+body.main {
+    min-height: 100%;
+    margin-bottom: 2em;
+    position: relative;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+h1 {
+    color: royalblue;
+    font-size: 50px;
+    font-family: sans-serif;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+/* CSS for my description section */
+.description {
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+/* Code to keep images centered on the page */
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Some code for a CSS reset from Ramon Meza from Piazza */
+html, body {
+    background-color: lightgoldenrodyellow;
+    font-family: 'Josefins Sans', sans-serif;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/* Centers images on a page. */
+.displayed {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+/* CSS code I created to keep the text at the bottom of the page. */
+#footer {
+    clear: both;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    height: 2em;
+    margin-top: 0em;
+}
+
+.clearfooter {
+    height: 100px;
+    clear: both;
+}
+
+/* No underline for links */
+.no-underline {
+    text-decoration: none;
+}
+
+li.nav { 
+    /* float: left; */
+    display: inline-block; 
+}
+
+.in-block {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    /*padding-left: 15%;*/
+    padding-bottom: 4%;
+}
+
+li.links { 
+    padding-bottom: 5%;
+    display: inline-block; 
+}
+
+/* Assignment links */
+#assign {
+    list-style-type: none;
+
+}
+
+/* Still figuring out how to make the navigation bar centered for all screens */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    /*padding-left: 15%;*/
+    padding-bottom: 4%;
+}
+
+/* This section was taken from the w3school.                                                                                                                      
+   Source at http://www.w3schools.com/css/css_navbar.asp# */
+
+a.links:link, a.links:visited {
+    display: block;
+    width: 140px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #162d97;
+    border-radius: 25px;
+    box-shadow: 5px 5px black;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+a.links:hover, a.links:active {
+    background-color: #5471f8;
+    cursor: pointer;
+}
+
+.column {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+/* End of w3school's CSS code */
+
+
+/* Created so I can have images to the right of text */
+img.float-right {
+    float: right;
+}
+
+ul.float-right {
+    float: right;
+}
+
+/* Line seperator to seperate content */
+hr {
+    color: #222;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+/*Assignment 9 CSS */
+#tile-drag_0 { 
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: auto;
+    left: auto;
+    border: red;
+}
+#droppable { width: 50px; height: 50px; float: left; display: inline-block;}
+
+img {
+    width: 50px;
+    height: 50px;
+    padding-right: 5%;
+}
+
+#tiles {
+    display: block;
+    padding-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+#restart {
+    color: white;
+    background: black;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+#scrabble-board {
+    display: block;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+#scrabble-rack {
+    width: 640px;
+    height: 91px;
+    position: absolute;
+    padding-left: 15%;
+}
+
+#score {
+    display: block;
+    font-size: 40px;
+    position: absolute;
+    margin: 0 auto;
+    float: left;
+    padding-left: 20%;
+}
+#score_display {
+    display: block;
+    font-size: 40px;
+    position: absolute;
+    margin: 0 auto;
+    float: left;
+    padding-left: 15%;
+}
+#letters {
+    display: block;
+    font-size: 55px;
+    position: absolute;
+    padding-left: 70%;
+}
+
+//Took this CSS from Jason Downing.
+/* Double / Triple letter CSS */
+.double_letter {
+    background: url("double_letter.png");
+}
+
+.triple_letter {
+  /* background: blue;  */
+  background: url("triple_letter.png");
+}
+
+.double_letter {
+    background: url("double_letter.png");
+}
+
+/* Double / Triple word CSS */
+.double_word {
+    background: url("double_word.png");
+}
+
+.triple_word {
+  /*background: red;*/
+  background: url("triple_word.png");
+}
+
+.star {
+    background: url("gold-star.jpg");
+}
+
+td {
+  background: #D2B48C;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  z-index: 3;
+  /*  THIS IS INCREDIBLY IMPORTANT. SEE THIS URL FOR DETAILS:
+                    https://stackoverflow.com/questions/15712011/why-does-drag-go-behind-target-div */
+}
+
+table {
+    border: 2px solid black;
+}

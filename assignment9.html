@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link type="text/css" rel="stylesheet" href="start.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+        <!--                                                                                                                                                          
+        Name: sarjith Rao Gona                                                                                                                                    
+        Contact: Sarjithrao_Gona@student.uml.edu                                                                                                                    
+        Major: Computer Science                                                                                                                                   
+        School: University of Massachusetts Lowell                                                                                                                
+        Date modified: December 6, 2016                                                                                                                                                                                                               
+        Description: Assignment 9: Implementing a Bit of Scrabble with Drag-and-Drop                                                                                  
+                                                                           
+        -->
+
+        <title>Assignment 9 </title>
+    </head>
+
+    <!-- Assignment 9 Page -->
+    <body class="main">
+        <h1 class="center">Implementing a Bit of Scrabble with Drag-and-Drop</h1>
+
+        
+        <h2 class="center">Scrabble with Drag-and-Drop</h2>
+
+        <!--insert scrabble board-->
+        <div id="scrabble-board"></div>
+
+        <span><img id="scrabble-rack" src="scrabble-rack.png" alt="scrabble-rack"></span>
+        <!--insert randomized scrabble tiles-->
+        <div id="tiles"></div> 
+        
+     
+        
+        <div id="letters"></div>
+        <span id="score_display">Score:<span id="score"></span>
+        </span>
+        <div id="rack"></div>
+        <input type="button" id="restart" value="Start New Game" onClick="window.location.reload()">
+        <!-- Text that is always at the bottom of the page -->    
+        <div class="clearfooter"></div>
+        <div id="footer">THIS IS INCREDIBLY IMPORTANT. SEE THIS URL FOR DETAILS:
+                    https://stackoverflow.com/questions/15712011/why-does-drag-go-behind-target-div</div>
+
+        <!-- jQuery JavaScript incase the internet is down -->
+       <!--script src="js/jquery-1.9.1.js"></script>-->
+        
+        <!-- jQuery JavaScript -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="jquery-ui.js"></script>
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- jQuery Validation plugin -->
+  <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+  <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+
+  <!-- jQuery UI Slider and Tab Wigets -->
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  
+        <!-- Assignment 9 JavaScript -->
+        <script src='assignment9.js'></script>
+    </body>
+</html>
