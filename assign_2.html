@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <!--                                                                                                                                                           
+        Name: Sarjith Rao Gona                                                                                                                                      
+        Contact: sarjithrao_gona@student.uml.edu                                                                                                                    
+        Major: Computer Science                                                                                                                                   
+        School: University of Massachusetts Lowell                                                                                                                                                                                                        
+        91.461 - GUI 1                                                                                                         
+        Description: Assignment Page
+       --->
+    <style>
+    h1 {
+    color: royalblue;
+    font-size: 50px;
+    font-family: serif; 
+}
+
+/* CSS for my description section */
+.description {
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+/* Code to keep images centered on the page */
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/* CSS code I created to keep the text at the bottom of the page */
+.bottom {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 80%;
+}
+
+li {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 37%;
+    padding-bottom: 2%;
+}
+
+/* This section was taken from the w3school.
+   Source at http://www.w3schools.com/css/css_navbar.asp# */
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #162d97;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #5471f8;
+}
+
+    </style>
+
+    
+
+    <title>Sarjith Rao Gona</title>
+</head>
+
+<!--
+    This section contains what is displayed on the page to practice with some of the tags of HTML, 
+    with some basic CSS.
+  -->
+<body>
+  <h1 class="center"> Hi, I'm sarjith rao Gona </h1>
+
+<!-- Navigation Bar -->
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="assignment_2.pdf">Assignment Details</a><li>
+  </ul>
+<!-- Description about myself -->
+  <div class="description">I'm a Computer Science major at the University of Massachusetts Lowell. This is my second assignment of GUI-1 </div>
+  
+  <img class="displayed" src="images/pro-pic.jpg" alt="pro-pic" style="width:683px; height:384px">
+
+<!-- Text that is always at the bottom of the page -->  
+  <div class="bottom"> Note: Home option above will redirect to the same page </div>
+</body>
+</html>
